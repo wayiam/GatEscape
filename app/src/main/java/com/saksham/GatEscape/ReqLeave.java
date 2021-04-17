@@ -1,4 +1,4 @@
-package com.saksham.gateway;
+package com.saksham.GatEscape;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,17 +7,19 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class TrackYourRequest extends AppCompatActivity {
+public class ReqLeave extends AppCompatActivity {
 
-    Button cancel;
+    Button submit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_track_your_request);
+        setContentView(R.layout.activity_req_leave);
+
+        submit = findViewById(R.id.submit);
 
 
-        cancel.setOnClickListener(new View.OnClickListener() {
+        submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openNewActivity();
@@ -26,7 +28,7 @@ public class TrackYourRequest extends AppCompatActivity {
     }
 
     private void openNewActivity() {
-        Intent intent = new Intent(this,MainActivity.class);
+        Intent intent = new Intent(this, TrackYourRequest.class);
         startActivity(intent);
     }
 }
