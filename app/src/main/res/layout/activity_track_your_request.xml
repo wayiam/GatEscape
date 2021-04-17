@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#242424"
+    tools:context=".ReqLeave">
+
+    <LinearLayout
+        android:id="@+id/toolbar_layout"
+        android:layout_width="0dp"
+        android:layout_height="?actionBarSize"
+        android:background="#FFFF"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/text_bg"
+            android:paddingStart="10dp"
+            android:paddingTop="3dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="3dp"
+            android:text="Cancel"
+            android:textColor="@color/colorText"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="@+id/toolbar_layout"
+        app:layout_constraintTop_toTopOf="@+id/toolbar_layout">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="@+id/toolbar_layout"
+            app:layout_constraintTop_toTopOf="@+id/toolbar_layout">
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="0dp"
+                android:layout_height="3dp"
+                android:background="@drawable/drop_shadow"
+                tools:layout_editor_absoluteY="56dp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Requested on"
+                android:textAllCaps="true"
+                tools:layout_editor_absoluteX="28dp"
+                tools:layout_editor_absoluteY="70dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Roll nomber"
+                android:textAllCaps="true"
+                tools:layout_editor_absoluteX="273dp"
+                tools:layout_editor_absoluteY="72dp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="02/07/2020"
+                tools:layout_editor_absoluteX="48dp"
+                tools:layout_editor_absoluteY="89dp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6024"
+                tools:layout_editor_absoluteX="291dp"
+                tools:layout_editor_absoluteY="91dp" />
+
+            <View
+                android:id="@+id/view_divider"
+                android:layout_width="409dp"
+                android:layout_height="2dp"
+                android:background="@color/colorPrimaryDark"
+                tools:layout_editor_absoluteX="1dp"
+                tools:layout_editor_absoluteY="124dp" />
+
+            <View
+                android:id="@+id/view_order_placed"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                tools:layout_editor_absoluteX="30dp"
+                tools:layout_editor_absoluteY="191dp" />
+
+
+            <TextView
+                android:id="@+id/textorderplaced"
+                android:layout_width="251dp"
+                android:layout_height="wrap_content"
+                android:text="Approval from HOD"
+                android:textColor="@color/colorText"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="150dp"
+                tools:layout_editor_absoluteY="179dp" />
+
+            <TextView
+                android:id="@+id/placed_desc"
+                android:layout_width="251dp"
+                android:layout_height="wrap_content"
+                android:text="Request to HOD for leave"
+                tools:layout_editor_absoluteX="150dp"
+                tools:layout_editor_absoluteY="201dp" />
+
+            <View
+                android:id="@+id/view_order_confirmed"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                tools:layout_editor_absoluteX="30dp"
+                tools:layout_editor_absoluteY="301dp" />
+
+
+            <TextView
+                android:id="@+id/text_confirmed"
+                android:layout_width="251dp"
+                android:layout_height="wrap_content"
+                android:text="Approval from Class Incharge"
+                android:textColor="@color/colorText"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="150dp"
+                tools:layout_editor_absoluteY="290dp" />
+
+            <TextView
+                android:id="@+id/confirmed_desc"
+                android:layout_width="251dp"
+                android:layout_height="wrap_content"
+                android:text="Request to Class Inchare for leave"
+                tools:layout_editor_absoluteX="150dp"
+                tools:layout_editor_absoluteY="311dp" />
+
+            <View
+                android:id="@+id/placed_divider"
+                android:layout_width="2dp"
+                android:layout_height="82dp"
+                android:background="@color/colorPrimaryDark"
+                tools:layout_editor_absoluteX="39dp"
+                tools:layout_editor_absoluteY="219dp" />
+
+            <View
+                android:id="@+id/view_order_processed"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+
+                tools:layout_editor_absoluteX="30dp"
+                tools:layout_editor_absoluteY="411dp" />
+
+
+            <TextView
+                android:id="@+id/textorderprocessed"
+                android:layout_width="251dp"
+                android:layout_height="wrap_content"
+                android:text="Notification"
+                android:textColor="@color/colorText"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="150dp"
+                tools:layout_editor_absoluteY="381dp" />
+
+            <TextView
+                android:id="@+id/processed_desc"
+                android:layout_width="251dp"
+                android:layout_height="wrap_content"
+                android:text="Notification sent to parents"
+                tools:layout_editor_absoluteX="150dp"
+                tools:layout_editor_absoluteY="421dp" />
+
+            <View
+                android:id="@+id/con_divider"
+                android:layout_width="2dp"
+                android:layout_height="82dp"
+                android:background="@color/colorPrimaryDark"
+                tools:layout_editor_absoluteX="39dp"
+                tools:layout_editor_absoluteY="326dp" />
+
+            <View
+                android:id="@+id/view_order_pickup"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/shape_status_current"
+                tools:layout_editor_absoluteX="30dp"
+                tools:layout_editor_absoluteY="522dp" />
+
+
+            <TextView
+                android:id="@+id/textorderpickup"
+                android:layout_width="251dp"
+                android:layout_height="wrap_content"
+                android:text="Student is Approved for Leave."
+                android:textColor="@color/colorText"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="150dp"
+                tools:layout_editor_absoluteY="510dp" />
+
+            <TextView
+                android:id="@+id/pickup_desc"
+                android:layout_width="251dp"
+                android:layout_height="wrap_content"
+                android:alpha="0.5"
+                android:text="Permission Granted"
+                tools:layout_editor_absoluteX="150dp"
+                tools:layout_editor_absoluteY="531dp" />
+
+            <View
+                android:id="@+id/ready_divider"
+                android:layout_width="2dp"
+                android:layout_height="82dp"
+                android:alpha="0.5"
+                android:background="@color/colorPrimaryDark"
+                tools:layout_editor_absoluteX="39dp"
+                tools:layout_editor_absoluteY="436dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
