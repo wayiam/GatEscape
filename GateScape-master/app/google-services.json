@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1056460714616",
+    "project_id": "gatescape-bc5a9",
+    "storage_bucket": "gatescape-bc5a9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1056460714616:android:0522937b7f0e5ead41f38d",
+        "android_client_info": {
+          "package_name": "com.example.gatescape"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1056460714616-ltuc2ccn9peo2a13jp2g42bpalg7s3va.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxryVgKKHIcjwixR3f_KQ6V6vHVX5TQww"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1056460714616-ltuc2ccn9peo2a13jp2g42bpalg7s3va.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
